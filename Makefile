@@ -1,4 +1,5 @@
 NAME = libft.a
+
 SOURCES = \
 	ft_isalpha.c ft_isalnum.c ft_isdigit.c ft_isascii.c \
 	ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c \
@@ -12,12 +13,20 @@ SOURCES = \
 
 OBJECTS = $(SOURCES:.c=.o)
 
+INCLUDE = libft.h
+
+AR = ar rcs
+RM = rm -f
+
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
+
+%.o: %.c $(INCLUDE)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJECTS)

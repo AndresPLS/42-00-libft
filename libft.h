@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:41:48 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/09/27 14:07:50 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/01 14:24:21 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dest, const void *src, size_t n);
+void    *ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 
 /*Part 2 - aditional functions*/
