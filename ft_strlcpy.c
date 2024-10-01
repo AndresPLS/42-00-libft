@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/24 15:22:49 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 17:26:04 by apolo-lo         ###   ########.fr       */
+/*   Created: 2024/10/01 16:27:19 by apolo-lo          #+#    #+#             */
+/*   Updated: 2024/10/01 17:44:17 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+size_t  ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned char	*cast_dest;
-	unsigned char	*cast_src;
-	size_t	i;
+	size_t src_len;
 
-	cast_dest = (unsigned char *)dest;
-	cast_src = (unsigned char *)src;
-	i = 0;
-	if (cast_dest == (void *)0 && cast_src == (void *)0)
-		return (cast_dest);
-	while (i++ < n)
-		cast_dest[i] = cast_src[i];
-	return (dest);
+	src_len = ft_strlen(src);
+	if (size < src_len + 1)
+		ft_memcpy(dst, src, src_len + 1);
+	else if (size != 0)
+	{
+		ft_memcpy(dst, src, size - 1);
+		dst[size - 1] = 0;
+	}
+	return (src_len);
 }
