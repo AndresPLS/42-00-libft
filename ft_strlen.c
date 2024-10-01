@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apolo-lo <apolo-lo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:47:00 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 14:09:22 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/01 16:18:12 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include "libft.h"
 
 size_t ft_strlen(const char *s)
 {
