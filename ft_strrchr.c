@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:10:07 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 13:42:47 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/01 15:13:06 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,18 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-    size_t i;s
+	size_t i;
 
-    i = ft_strlen(s);
+	i = ft_strlen(s);
 	if (c == NULL)
 		return(NULL);
 
     while (i >= 0)
     {
-        if (s[i] == (char)c)
-            return ((char *)&s[i]);
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
         i--;
-
     }
-
     return (0);
 }
 
