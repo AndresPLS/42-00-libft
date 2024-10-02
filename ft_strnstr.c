@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 19:09:21 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/02 18:37:01 by apolo-lo         ###   ########.fr       */
+/*   Created: 2024/10/01 18:12:26 by apolo-lo          #+#    #+#             */
+/*   Updated: 2024/10/02 21:46:20 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <string.h>
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    size_t i;
+	size_t i;
+	size_t j;
 
-    i = 0;
-    while ((s1[i] || s2[i]) && i < n)
-    {
-        if ((unsigned char)s1[i] != (unsigned char)s2[i])
-            return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-        i++;
-    }
-    return (0);
+	i = 0;
+	j = 0;
+	if (needle[0] == 0)
+		return ((char *)haystack);
+	while (haystack[i] && i < len)
+	{
+		while (haystack[i + j] == needle[j] && haystack[i + j] && i + j < len)
+		{
+			j++;
+			if (needle[j] == 0)
+				return ((char *)haystack + i);
+		}
+		i++;
+		j = 0;
+	}
+	return (NULL);
 }

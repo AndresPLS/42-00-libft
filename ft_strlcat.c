@@ -6,16 +6,16 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:28:52 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 18:09:18 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/02 20:08:15 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-size_t	strlcat(char *dst, const char *src, size_t size)
+size_t ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	len_dst;
-	size_t	len_src;
+	size_t len_dst;
+	size_t len_src;
 
 	len_dst = ft_strlen(dst);
 	len_src = ft_strlen(src);

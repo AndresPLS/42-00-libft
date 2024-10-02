@@ -1,31 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:12:26 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/02 20:49:02 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 00:02:26 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <string.h>
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int ft_atoi(const char *str)
 {
-	size_t i;
-	unsigned char *str1;
-	unsigned char *str2;
+	int i;
+	int sign;
+	int result;
 
 	i = 0;
-	str1 = (unsigned char *)s1;
-	str2 = (unsigned char *)s2;
-	while (i < n)
+	sign = 1;
+	result = 0;
+
+	while (ft_isspace(str[i]) == 1)
+		i++;
+	if ((str[i] == '+') && (str[i + 1] != '-'))
+		i++;
+	if (str[i] == '-')
 	{
-		if ((unsigned char)str1[i] != (unsigned char)str2[i])
-			return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+		sign = -1;
 		i++;
 	}
+	while (str[i] && str[i] > 47 && str[i] < 58)
+	{
+		result *= 10;
+		result += str[i] - '0';
+		i++;
+	}
+	result *= sign;
+	return (result);
+}
+
+static int ft_isspace(int c)
+{
+	if (c == 9 || c == 10 || c == 11 || c == 12 || c == 13 || c == 32)
+		return (1);
 	return (0);
 }
