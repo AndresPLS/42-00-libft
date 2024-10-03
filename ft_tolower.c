@@ -6,11 +6,12 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:06:31 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 14:07:30 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:22:54 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {

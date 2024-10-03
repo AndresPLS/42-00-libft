@@ -6,17 +6,18 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 15:22:49 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 17:26:04 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:40:34 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*cast_dest;
 	unsigned char	*cast_src;
-	size_t	i;
+	size_t			i;
 
 	cast_dest = (unsigned char *)dest;
 	cast_src = (unsigned char *)src;

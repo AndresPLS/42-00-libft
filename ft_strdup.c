@@ -6,16 +6,17 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:07:32 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 10:43:25 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:21:37 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
-char *ft_strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
-	size_t i;
-	char *dest_s1;
+	size_t	i;
+	char	*dest_s1;
 
 	if (!s1)
 		return (NULL);

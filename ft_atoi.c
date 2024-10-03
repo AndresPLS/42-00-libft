@@ -6,22 +6,29 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:12:26 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 00:02:26 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:27:20 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
 
-int ft_atoi(const char *str)
+static int	ft_isspace(int c)
 {
-	int i;
-	int sign;
-	int result;
+	if (c == 9 || c == 10 || c == 11 || c == 12 || c == 13 || c == 32)
+		return (1);
+	return (0);
+}
+
+int	ft_atoi(const char *str)
+{
+	int	i;
+	int	sign;
+	int	result;
 
 	i = 0;
 	sign = 1;
 	result = 0;
-
 	while (ft_isspace(str[i]) == 1)
 		i++;
 	if ((str[i] == '+') && (str[i + 1] != '-'))
@@ -39,11 +46,4 @@ int ft_atoi(const char *str)
 	}
 	result *= sign;
 	return (result);
-}
-
-static int ft_isspace(int c)
-{
-	if (c == 9 || c == 10 || c == 11 || c == 12 || c == 13 || c == 32)
-		return (1);
-	return (0);
 }

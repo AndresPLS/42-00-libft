@@ -6,17 +6,18 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:12:26 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/02 20:49:02 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:16:57 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t i;
-	unsigned char *str1;
-	unsigned char *str2;
+	size_t			i;
+	unsigned char	*str1;
+	unsigned char	*str2;
 
 	i = 0;
 	str1 = (unsigned char *)s1;

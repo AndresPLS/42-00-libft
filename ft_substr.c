@@ -6,24 +6,24 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 10:42:32 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 13:49:49 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:41:06 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <unistd.h>
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char *substr;
-    size_t  i;
+	char	*substr;
+	size_t	i;
 
-    if (!s)
-        return (NULL);
-    if (start >= ft_strlen(s))
-        return (ft_strdup(""));
-    if (len > ft_strlen(s + start))
-        len = ft_strlen(s + start);
-	
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
 	substr = ft_calloc(len + 1, sizeof(char));
 	if (!substr)
 		return (NULL);

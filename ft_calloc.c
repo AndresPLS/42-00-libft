@@ -6,16 +6,16 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:07:32 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 00:30:51 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:16:21 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void *ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char *temp;
-	size_t i;
+	unsigned char	*temp;
+	size_t			i;
 
 	i = 0;
 	temp = malloc(count * size);

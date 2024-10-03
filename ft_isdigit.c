@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: apolo-lo <apolo-lo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 15:46:19 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 14:24:36 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 17:22:54 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

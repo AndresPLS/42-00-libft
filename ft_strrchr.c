@@ -6,21 +6,21 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 13:10:07 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 13:11:23 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 18:19:37 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t i;
+	size_t	i;
 
 	i = ft_strlen(s);
-	if (c == NULL)
+	if (!c)
 		return (NULL);
-
 	while (i >= 0)
 	{
 		if (s[i] == (char)c)
