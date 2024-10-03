@@ -6,9 +6,22 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:07:32 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/01 14:28:52 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/03 00:30:51 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void *ft_calloc(size_t count, size_t size)
+{
+	unsigned char *temp;
+	size_t i;
+
+	i = 0;
+	temp = malloc(count * size);
+	if (!temp)
+		return (NULL);
+	while (i < (count * size))
+		temp[i++] = 0;
+	return (temp);
+}

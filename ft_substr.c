@@ -1,25 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/30 17:56:27 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 10:43:39 by apolo-lo         ###   ########.fr       */
+/*   Created: 2024/10/03 10:42:32 by apolo-lo          #+#    #+#             */
+/*   Updated: 2024/10/03 10:43:27 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putnbr_fd(int b, int fd)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    if (n == -2147483648)
-        write(fd, "-2147483648", 11);
-    else if (n < 0)
-    {
-    }
-    else
-    {
-    }
 }
