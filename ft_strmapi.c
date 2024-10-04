@@ -6,13 +6,28 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 18:56:45 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 18:57:27 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/04 20:01:07 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	unsigned int i;
+	char *new_str;
 
+	if (!s || !f)
+		return (NULL);
+	i = 0;
+	new_str = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
+	if (!new_str)
+		return (NULL);
+	while (s[i])
+	{
+		new_str[i] = (*f)(i, s[i]);
+		i++;
+	}
+	new_str[i] = '\0';
+	return (new_str);
 }
