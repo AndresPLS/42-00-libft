@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:07:32 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 18:21:37 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 17:54:34 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char *s1)
 	size_t	i;
 	char	*dest_s1;
 
-	if (!s1)
-		return (NULL);
 	i = 0;
 	dest_s1 = (char *)malloc(ft_strlen(s1) + 1);
 	if (!dest_s1)
