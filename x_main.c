@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 22:09:07 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/07 12:54:43 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:48:59 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,34 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <limits.h>
+
+// IOTA
+
+int main(void)
+{
+    int numbers[] = {0, 42, -42, 123456, -123456, INT_MAX, INT_MIN};
+    char *result;
+    int i = 0; // Inicializar el índice
+
+    // Utiliza while para recorrer los números
+    while (i < 7)
+    {
+        result = ft_itoa(numbers[i]);
+        if (result)
+        {
+            printf("ft_itoa(%d) = %s\n", numbers[i], result);
+            free(result); // Libera la memoria asignada
+        }
+        else
+        {
+            printf("Error al convertir %d\n", numbers[i]);
+        }
+        i++; // Incrementar el índice
+    }
+
+    return 0;
+}
 
 // SPLIT
 
