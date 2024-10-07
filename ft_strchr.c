@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:04:37 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 17:22:54 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:21:38 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (s[i] == '\0')
+	if (s[i] == (char)c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-
-/*
-int main()
-{
-    char *str = "hola que tal?";
-    char *prt = ft_strchr(str, 'x');
-
-    printf("%s", prt);
-    return (0);
-}
-*/

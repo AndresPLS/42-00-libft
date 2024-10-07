@@ -24,15 +24,16 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
+	$(AR) $(NAME) $(OBJECTS)
 
 %.o: %.c $(INCLUDE)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJECTS)
+	$(RM) $(OBJECTS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 

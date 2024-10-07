@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 16:27:19 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 18:21:24 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:15:30 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	src_len;
 
 	src_len = ft_strlen(src);
-	if (size < src_len + 1)
+	if (size > src_len + 1)
 		ft_memcpy (dst, src, src_len + 1);
 	else if (size != 0)
 	{

@@ -6,16 +6,17 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 18:56:45 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/04 20:01:07 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:59:36 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int i;
-	char *new_str;
+	unsigned int	i;
+	char			*new_str;
 
 	if (!s || !f)
 		return (NULL);

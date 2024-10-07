@@ -6,19 +6,17 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 20:09:07 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/04 22:06:31 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:53:35 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
-	if (!s || !f)
-		return;
 	while (s[i])
 	{
 		(*f)(i, &s[i]);

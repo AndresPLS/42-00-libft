@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 12:55:07 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/07 14:45:02 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 15:58:57 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 #include <stdio.h>
 #include "libft.h"
 
-static int ft_num_len(int n)
+static int	ft_num_len(int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n <= 0)
 	{
-		len = 1; // This count the sign
+		len = 1;
 		if (n < 0)
 			n = -n;
 	}
@@ -31,13 +31,14 @@ static int ft_num_len(int n)
 		n /= 10;
 		len++;
 	}
-	return len;
+	return (len);
 }
+// This count the sign
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int len;
-	char *str;
+	int		len;
+	char	*str;
 
 	len = ft_num_len(n);
 	str = (char *)ft_calloc(len + 1, sizeof(char));
@@ -51,7 +52,7 @@ char *ft_itoa(int n)
 	else if (n == 0)
 	{
 		str[0] = '0';
-		return str;
+		return (str);
 	}
 	while (n > 0)
 	{
@@ -59,5 +60,5 @@ char *ft_itoa(int n)
 		n = n / 10;
 		len--;
 	}
-	return str;
+	return (str);
 }

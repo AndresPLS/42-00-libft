@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:13:06 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 18:20:32 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 16:12:34 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
-		while (i++ < n)
+		while (i < n)
+		{
 			str_dest[i] = str_src[i];
+			i++;
+		}
 	}
 	return (str_dest);
 }
