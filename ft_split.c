@@ -6,13 +6,10 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 22:09:07 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/07 15:58:33 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 19:27:30 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
 static int	ft_word_counter(char const *str, char c)

@@ -6,7 +6,7 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 20:41:48 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/07 18:21:12 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 19:25:53 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdlib.h>
 # include <stdint.h>
 # include <limits.h>
+# include <stdio.h>
 
 /*Part 1 - libc functions*/
 int		ft_isalpha(int c);

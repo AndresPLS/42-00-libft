@@ -6,11 +6,10 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 18:12:26 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 18:16:57 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 19:27:30 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

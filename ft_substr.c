@@ -6,12 +6,11 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 10:42:32 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/03 18:41:06 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 19:27:30 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

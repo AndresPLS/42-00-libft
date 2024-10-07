@@ -6,12 +6,10 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 14:55:57 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/07 17:16:28 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 19:27:30 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
 static int	to_cut(const char *set, char c)

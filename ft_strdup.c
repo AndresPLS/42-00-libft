@@ -6,11 +6,10 @@
 /*   By: apolo-lo <apolo-lo@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 18:07:32 by apolo-lo          #+#    #+#             */
-/*   Updated: 2024/10/07 17:54:34 by apolo-lo         ###   ########.fr       */
+/*   Updated: 2024/10/07 19:27:30 by apolo-lo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s1)
